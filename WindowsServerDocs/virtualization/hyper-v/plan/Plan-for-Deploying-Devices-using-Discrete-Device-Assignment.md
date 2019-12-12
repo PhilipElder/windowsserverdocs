@@ -27,7 +27,7 @@ In addition to the [System Requirements for Windows Server](../../../get-started
 
 These capabilities usually aren't exposed directly in the BIOS of the server and are often hidden behind other settings.  For example, the same capabilities are required for SR-IOV support and in the BIOS you may need to set "Enable SR-IOV."  Please reach out to your system vendor if you are unable to identify the correct setting in your BIOS.
 
-To help ensure hardware the hardware is capable of Discrete Device Assignment, our engineers have put together a [Machine Profile Script](#machine-profile-script) that you can run on an Hyper-V enabled host to test if your server is correctly setup and what devices are capable of Discrete Device Assignment.
+To help ensure hardware the hardware is capable of Discrete Device Assignment, our engineers have put together a [Machine Profile Script](#machine-profile-script) that you can run on a Hyper-V enabled host to test if your server is correctly set up and what devices are capable of Discrete Device Assignment.
 
 ## Device Requirements
 Not every PCIe device can be used with Discrete Device Assignment.  For example, older devices that leverage legacy (INTx) PCI Interrupts are not supported. Jake Oshin's [blog posts](https://blogs.technet.microsoft.com/virtualization/2015/11/20/discrete-device-assignment-machines-and-devices/) go into more detail - however, for the consumer, running the [Machine Profile Script](#machine-profile-script) will display which devices are capable of being used for Discrete Device Assignment.
